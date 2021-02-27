@@ -1,10 +1,14 @@
 
-// import { useContext } from 'react';
-// import { ChallengesContext } from '../contexts/ChallengesContext';
 // import { CountdownContext } from '../contexts/CountdownContext';
+import { useContext } from 'react';
+import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/components/ChallengeBox.module.css';
 
 export function ChallengeBox() {
+
+  const cantextData = useContext(ChallengesContext)
+
+  console.log(cantextData)
 
   const hasActiveChallenge = true;
 
